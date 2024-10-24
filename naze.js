@@ -783,7 +783,7 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 			break
 			case 'sc': case 'script': {
 				await naze.sendMessage(m.chat, {
-					text: `https://github.com/nazedev/hitori\n⬆️ Itu Sc nya cuy`,
+					text: `kontak owner saja\nketik .owner`,
 					contextInfo: {
 						forwardingScore: 10,
 						isForwarded: true,
