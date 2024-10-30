@@ -782,8 +782,9 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 			}
 			break
 			case 'sc': case 'script': {
+			    await naze.sendContact(m.chat, owner, m)		   
 				await naze.sendMessage(m.chat, {
-					text: `kontak owner saja\nketik .owner`,
+					text: `silahkan hubungi owner`,	
 					contextInfo: {
 						forwardingScore: 10,
 						isForwarded: true,
@@ -1182,7 +1183,11 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
 				naze.sendMessage(m.chat, { text: `@${m.sender.split('@')[0]}`, mentions: [m.sender] }, { quoted: m })
 			}
 			break
-			case 'runtime': case 'tes': case 'bot': {
+			case 'bot': {
+			naze.sendMessage(m.chat, { text: 'Hai Bot Disini, ada yang bisa dibantu\n*ketik .menu*'  })		
+			}
+		    break	
+			case 'runtime': case 'tes': {
 				if (text && text.startsWith('--') && isCreator) {
 					let buttonnya = [{
 						name: 'single_select',
