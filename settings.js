@@ -9,10 +9,10 @@ const chalk = require('chalk');
 
 //~~~~~~~~~~~~< GLOBAL SETTINGS >~~~~~~~~~~~~\\
 
-global.owner = ['6285839936163']
+global.owner = ['6281326977165']
 global.packname = 'Bot WhatsApp'
-global.author = 'ZEIN UMAR DANI'
-global.botname = 'Zen Bot'
+global.author = 'KANGPROF BOT'
+global.botname = 'KangProf Bot'
 global.listv = ['•','●','■','✿','▲','➩','➢','➣','➤','✦','✧','△','❀','○','□','♤','♡','◇','♧','々','〆']
 global.tempatDB = 'database.json'
 global.pairing_code = true
